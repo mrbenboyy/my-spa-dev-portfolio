@@ -9,31 +9,32 @@ import CssIcon from '@/assets/icons/css3.svg';
 import ReactIcon from '@/assets/icons/react.svg';
 import ChromeIcon from '@/assets/icons/chrome.svg';
 import GithubIcon from '@/assets/icons/github.svg';
+import TechIcon from "@/components/TechIcon";
 
 const toolboxItems = [
   {
     title: "Javascript",
-    icon: <JavascriptIcon />
+    iconType: JavascriptIcon
   },
   {
     title: "HTML5",
-    icon: <HTMLIcon />
+    iconType: HTMLIcon
   },
   {
     title: "CSS3",
-    icon: <CssIcon />
+    iconType: CssIcon
   },
   {
     title: "React",
-    icon: <ReactIcon />
+    iconType: ReactIcon
   },
   {
     title: "Chrome",
-    icon: <ChromeIcon />
+    iconType: ChromeIcon
   },
   {
     title: "Github",
-    icon: <GithubIcon />
+    iconType: GithubIcon
   },
 ]
 
@@ -60,6 +61,30 @@ export const AboutSection = () => {
           <StarIcon />
           <h3>My Toolbox</h3>
           <p>Explore the technologies and tools I use to craft exceptional digital experiences.</p>
+        </div>
+        <div>
+          {toolboxItems.map((item, index) => (
+            <div key={index}>
+              <TechIcon component={item.iconType} />
+              <span> {item.title} </span>
+            </div>
+          ))}
+        </div>
+      </Card>
+
+      <Card>
+        <div>
+          <StarIcon />
+          <h3>Beyond the Code</h3>
+          <p>Explore my interests and hobbies beyond the digital realm.</p>
+        </div>
+      </Card>
+
+      <Card>
+        <div>
+          <StarIcon />
+          <h3>Beyond the Code</h3>
+          <p>Explore my interests and hobbies beyond the digital realm.</p>
         </div>
       </Card>
     </div>
