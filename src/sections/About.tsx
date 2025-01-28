@@ -8,10 +8,10 @@ import CssIcon from '@/assets/icons/css3.svg';
 import ReactIcon from '@/assets/icons/react.svg';
 import ChromeIcon from '@/assets/icons/chrome.svg';
 import GithubIcon from '@/assets/icons/github.svg';
-import TechIcon from "@/components/TechIcon";
 import mapImage from "@/assets/images/map.png";
 import memojiSmile from "@/assets/images/memoji-smile.png";
 import { CardHeader } from "@/components/CardHeader";
+import ToolboxItems from "@/components/ToolboxItems";
 
 const toolboxItems = [
   {
@@ -76,7 +76,7 @@ export const AboutSection = () => {
         description="Learn more about who I am, what I do, and what inspires me."
       />
 
-      <div className="mt-20">
+      <div className="mt-20 flex flex-col gap-8">
         <Card className="h-[320px]">
           <CardHeader
             title="My Reads"
@@ -87,19 +87,14 @@ export const AboutSection = () => {
           </div>
         </Card>
 
-        <Card>
+        <Card className="h-[320px] p-0">
           <CardHeader
             title="My Toolbox"
             description="Explore the technologies and tools I use to craft exceptional digital experiences."
+            className="px-6 pt-6"
           />
-          <div>
-            {toolboxItems.map((item, index) => (
-              <div key={index}>
-                <TechIcon component={item.iconType} />
-                <span> {item.title} </span>
-              </div>
-            ))}
-          </div>
+          <ToolboxItems items={toolboxItems} className="mt-6" />
+          <ToolboxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="-translate-x-1/2" />
         </Card>
 
         <Card>
@@ -115,13 +110,6 @@ export const AboutSection = () => {
               </div>
             ))}
           </div>
-        </Card>
-
-        <Card>
-          <CardHeader
-            title="Beyond the Code"
-            description="Explore my interests and hobbies beyond the digital realm."
-          />
         </Card>
 
         <Card>
