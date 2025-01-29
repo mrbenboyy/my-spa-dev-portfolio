@@ -7,8 +7,8 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 const calistoga = Calistoga({ subsets: ['latin'], variable: '--font-serif', weight: ['400'] })
 
 export const metadata: Metadata = {
-  title: "Abdelhakim's Portfolio",
-  description: "Modern & Minimalist Abdelhakim Portfolio",
+  title: "Abdelhakim BENBOUANANE Portfolio",
+  description: "Modern & Minimalist Abdelhakim Benbouanane Portfolio",
 };
 
 export default function RootLayout({
