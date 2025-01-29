@@ -1,3 +1,5 @@
+'use client'
+
 import memojiImage from "@/assets/images/memoji-computer.png";
 import Image from 'next/image';
 import ArrowDown from '@/assets/icons/arrow-down.svg';
@@ -5,8 +7,18 @@ import grainImage from '@/assets/images/grain.jpg';
 import StarIcon from '@/assets/icons/star.svg';
 import SparkleIcon from '@/assets/icons/sparkle.svg';
 import { HerOrbit } from "@/components/HeroOrbit";
+import { useState } from "react";
+
 
 export const HeroSection = () => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    const text = "mrbenboyy@gmail.com";
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+  };
+
   return <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
     <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
       <div className="absolute inset-0 -z-30 opacity-5" style={{
@@ -76,10 +88,14 @@ export const HeroSection = () => {
           <span className="font-semibold">Explore My Work</span>
           <ArrowDown className="size-4" />
         </a>
-        <a href="https://www.linkedin.com/in/benbouanane-abdelhakim-8a41242a8" target="blanket" className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-          <span>👋</span>
-          <span className="font-semibold">Let&apos;s Connect</span>
-        </a>
+        <button onClick={handleCopy} className={`inline-flex items-center gap-2 border h-12 px-6 rounded-xl ${copied ? 'border-green-600 bg-green-600 text-white transition-all duration-300' : 'border-white bg-white text-gray-900'}`}>
+          <span>
+            {copied ? "" : "👋"}
+          </span>
+          <span className="font-semibold">
+            {copied ? "Email copied" : "Let's connect"}
+          </span>
+        </button>
       </div>
     </div>
   </div>;
