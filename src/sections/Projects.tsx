@@ -4,9 +4,9 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
-import grainImage from '@/assets/images/grain.jpg';
 import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
+import GithubLogo from "@/assets/images/github-mark.png";
 
 const portfolioProjects = [
   {
@@ -93,7 +93,9 @@ export const ProjectsSection = () => {
       <div className="flex flex-wrap items-center justify-center mt-4">
         <a className="relative" href="https://github.com/mrbenboyy" target="_blank">
           <span className="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-black"></span>
-          <span className="fold-bold font-serif relative inline-flex items-center gap-2 h-full w-full rounded border-2 border-black bg-white px-3 py-2 md:px-28 text-base md:text-2xl font-medium text-black transition duration-100 hover:bg-emerald-300 hover:text-gray-950">Show more
+          <span className="fold-bold font-serif relative inline-flex items-center gap-2 md:gap-5 h-full w-full rounded border-2 border-black bg-white px-3 py-2 md:px-28 text-base md:text-2xl font-medium text-black transition duration-100 hover:bg-emerald-300 hover:text-gray-950">
+            <Image src={GithubLogo} alt="github logo" className="size-5 md:size-7" />
+            Show more
           </span>
         </a>
       </div>
