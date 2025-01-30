@@ -13,6 +13,6 @@ export const CardHeader = ({ title, description, className, descClassName }
             <StarIcon className="size-9 text-emerald-300" />
             <h3 className="font-serif text-3xl"> {title} </h3>
         </div>
-        <p className={twMerge("text-sm lg:text-base max-w-xs text-white/60 mt-2", descClassName)}> {description} </p>
+        <p className={twMerge("text-sm md:text-base max-w-xs text-white/60 mt-2", descClassName)}> {description} </p>
     </div>
 }
