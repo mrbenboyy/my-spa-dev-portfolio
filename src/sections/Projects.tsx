@@ -1,6 +1,6 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import taskMate from "@/assets/images/task-mate.png";
+import dataExplorer from "@/assets/images/data-explorer.png";
+import lhewta from "@/assets/images/lhewta.png";
 import Image from "next/image";
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
@@ -10,40 +10,40 @@ import GithubLogo from "@/assets/images/github-mark.png";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Academic Project",
+    year: "2025",
+    title: "TaskMate - Chatbot",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Chatbot task management" },
+      { title: "Manual task management" },
+      { title: "Secure data handling" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://github.com/mrbenboyy/chatbot-task-manager-frontend",
+    image: taskMate,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Academic Project",
+    year: "2025",
+    title: "Data Explorer",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Upload CSV files" },
+      { title: "Index and slice data" },
+      { title: "Visualize data" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://github.com/mrbenboyy/data_explorer",
+    image: dataExplorer,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "Personal Project",
+    year: "2024",
+    title: "Lhewta",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Place orders" },
+      { title: "Checkout" },
+      { title: "Track orders" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://github.com/mrbenboyy/lhewta",
+    image: lhewta,
   },
 ];
 
@@ -78,7 +78,7 @@ export const ProjectsSection = () => {
                 </ul>
                 <a href={project.link}>
                   <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                    <span>Visit Live Site</span>
+                    <span>View Project</span>
                     <ArrowUpRightIcon className="size-4" />
                   </button>
                 </a>
