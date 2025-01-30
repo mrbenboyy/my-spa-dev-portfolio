@@ -12,7 +12,7 @@ const Me = () => {
                 descClassName="md:max-w-lg"
                 className="md:justify-center md:pr-5"
             />
-            <div className="flex items-center justify-center rounded-3xl flex-shrink-0 -mb-11">
+            <div className="relative -z-10 flex items-center justify-center rounded-3xl flex-shrink-0 -mb-11">
                 <Image src={MyPic} alt="my picture" className="w-56 pl-2 md:pl-0 md:w-72 rounded-3xl shadow-gray-950"/>
             </div>
         </Card>
