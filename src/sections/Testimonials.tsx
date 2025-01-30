@@ -10,34 +10,24 @@ import { Fragment } from "react";
 
 const testimonials = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    name: "Othmane CHLIGUI",
+    text: "Hakim is a coding wizard in the making! I remember when we were stuck on a group project, and he stayed up all night debugging our API issues like it was nothing. His knack for breaking down complex concepts into simple steps is unreal. If anyone’s going to thrive as a fullstack dev, it’s him.",
     avatar: memojiAvatar1,
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    name: "Ihssane HAQOUCH",
+    text: "I’ve never seen someone hustle like Hakim. From JavaScript frameworks to server-side scripting, he’s constantly leveling up. When I asked him why he’s obsessed with fullstack, he said, ‘I want to build everything myself—no limits.’ That’s Hakim for you—always aiming higher",
     avatar: memojiAvatar2,
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    name: "Yassine ZAYDI",
+    text: "I once asked Hakim to explain APIs, and he drew a pizza delivery analogy on a napkin. Suddenly, everything made sense. He’s not just coding—he’s teaching while he learns. Also, his GitHub is greener than my envy. 🟩",
     avatar: memojiAvatar3,
   },
   {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
+    name: "Mouad CHABAB",
+    text: "We called him ‘The Server Whisperer’ after he resurrected our crashed project 10 minutes before the demo. How? No idea. But Hakim’s got that rare mix of patience and genius. Hire him now or regret it later.",
     avatar: memojiAvatar4,
-  },
-  {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
-    avatar: memojiAvatar5,
   },
 ];
 
@@ -61,7 +51,6 @@ export const TestimonialsSection = () => {
                     </div>
                     <div>
                       <div className="font-semibold"> {testimonial.name} </div>
-                      <div className="text-sm text-white/40"> {testimonial.position} </div>
                     </div>
                   </div>
                   <p className="mt-4 md:mt-6 text-sm md:text-base">{testimonial.text}</p>
