@@ -8,8 +8,14 @@ import JavascriptIcon from '@/assets/icons/square-js.svg';
 import HTMLIcon from '@/assets/icons/html5.svg';
 import CssIcon from '@/assets/icons/css3.svg';
 import ReactIcon from '@/assets/icons/react.svg';
-import ChromeIcon from '@/assets/icons/chrome.svg';
+import laravelIcon from '@/assets/icons/laravel.svg';
 import GithubIcon from '@/assets/icons/github.svg';
+import SpringBootIcon from '@/assets/icons/spring-boot.svg';
+import AngularIcon from '@/assets/icons/angular.svg';
+import DjangoIcon from '@/assets/icons/django.svg';
+import DockerIcon from '@/assets/icons/docker.svg';
+import NodeJsIcon from '@/assets/icons/nodejs.svg';
+import NextJsIcon from '@/assets/icons/nextjs.svg';
 import mapImage from "@/assets/images/map.png";
 import memojiSmile from "@/assets/images/memoji-smile.png";
 import { CardHeader } from "@/components/CardHeader";
@@ -36,12 +42,36 @@ const toolboxItems = [
     iconType: ReactIcon
   },
   {
-    title: "Chrome",
-    iconType: ChromeIcon
+    title: "Laravel",
+    iconType: laravelIcon
   },
   {
     title: "Github",
     iconType: GithubIcon
+  },
+  {
+    title: "SpringBoot",
+    iconType: SpringBootIcon
+  },
+  {
+    title: "Angular",
+    iconType: AngularIcon
+  },
+  {
+    title: "Django",
+    iconType: DjangoIcon
+  },
+  {
+    title: "Docker",
+    iconType: DockerIcon
+  },
+  {
+    title: "NodeJS",
+    iconType: NodeJsIcon
+  },
+  {
+    title: "NextJS",
+    iconType: NextJsIcon
   },
 ]
 
