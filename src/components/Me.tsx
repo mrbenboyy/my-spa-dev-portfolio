@@ -8,7 +8,7 @@ const Me = () => {
         <Card className="flex flex-col-reverse md:flex-row md:gap-[98px] h-[400px] md:h-[250px]">
             <CardHeader
                 title="Know who am I"
-                description="Hi, My name is Abdelhakim Benbouanane a future computer engineer based in Morocco. Passionate about technology and innovation and I love turning ideas into reality through code."
+                description="Hi, my name is Abdelhakim Benbouanane a future computer engineer based in Morocco. Passionate about technology and innovation and I love turning ideas into reality through code."
                 descClassName="md:max-w-lg"
                 className="md:justify-center md:pr-5"
             />
