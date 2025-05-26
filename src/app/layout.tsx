@@ -24,7 +24,27 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/assets/me.png" />
+        <title>Abdelhakim BENBOUANANE Portfolio</title>
+        <meta
+          name="description"
+          content="Modern & Minimalist Abdelhakim Benbouanane Portfolio"
+        />
+        <meta property="og:title" content="Abdelhakim BENBOUANANE Portfolio" />
+        <meta
+          property="og:description"
+          content="Modern & Minimalist Abdelhakim Benbouanane Portfolio"
+        />
+        <meta property="og:image" content="/assets/me.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://your-domain.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Abdelhakim BENBOUANANE Portfolio" />
+        <meta
+          name="twitter:description"
+          content="Modern & Minimalist Abdelhakim Benbouanane Portfolio"
+        />
+        <meta name="twitter:image" content="/assets/me.png" />
+        <link rel="icon" href="/favicon.ico" />
         <style>{`
           html {
             scroll-behavior: smooth;
